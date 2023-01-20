@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chris Butrick - Pokemon Battle</title>
+	<link rel="icon" href="../Resources/pokeball2.ico">
+    <link rel="stylesheet" href="../CSS/style.css">
+</head>
+
+<body onload="getPokemon ()">
+    <!-- Navigation Bar -->
+    <nav>
+      <ul class="nav-bar">
+        <li> <img src="../Resources/Banner.png" alt="Banner with Chris Butick on it" class="banner"></li>
+        <li> <a href="#" class="nav-link">Pokemon Battle</a> </li>
+        <li> <a href="Hangman.html" class="nav-link">Hangman</a> </li>
+        <li> <a href="Calculator.html" class="nav-link">Calculator</a> </li>
+        <li> <a href="FizzBuzz.html" class="nav-link">FizzBuzz</a> </li>
+        <li> <a href="index.html" class="nav-link">Home</a> </li>
+      </ul>
+    </nav>
+	
+	<h2 id="choice-banner">Choose your Pokemon!</h2>
+	
+	<select id="pokemon-choices" name="pokemon" onchange="showPokemon (this.selectedIndex)">
+		
+	</select>
+	
+	<div id="image-container">
+		<img id="sprite">
+			<!-- Pokemon Sprite goes here -->
+		</img>
+		
+		<button onclick="goToBattle ()" id="battle-button">Battle!</button>
+	</div>
+	
+	<script type="text/javascript" src="../JS/events.js"></script>
+</body>
+
+</html>

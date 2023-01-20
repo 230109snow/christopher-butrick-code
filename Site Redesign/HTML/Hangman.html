@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chris Butrick - Hangman</title>
+	<link rel="icon" href="../Resources/pokeball2.ico">
+    <link rel="stylesheet" href="../CSS/style.css">
+</head>
+
+<body onload="newGame ()">
+    <!-- Navigation Bar -->
+    <nav>
+      <ul class="nav-bar">
+        <li> <img src="../Resources/Banner.png" alt="Banner with Chris Butick on it" class="banner"></li>
+        <li> <a href="PokemonBattle.html" class="nav-link">Pokemon Battle</a> </li>
+        <li> <a href="#" class="nav-link">Hangman</a> </li>
+        <li> <a href="Calculator.html" class="nav-link">Calculator</a> </li>
+        <li> <a href="FizzBuzz.html" class="nav-link">FizzBuzz</a> </li>
+        <li> <a href="index.html" class="nav-link">Home</a> </li>
+      </ul>
+    </nav>
+	
+	<!--  Welcome Header -->
+	<h1 id="welcome-banner">Welcome to Hangman!</h1>
+	
+	<!-- Word to be guessed -->
+	<p id="mystery-word"></p>
+	
+	<!-- Character Drawing -->
+	<canvas id="hangman-drawing" width="500" height="300" style="margin-left:50px">
+	</canvas>
+	
+	<!-- Guessing Buttons -->
+	<div class="hangman-buttons">
+		<button class="hangman-button" onclick="guessLetter (this)">A</button>
+		<button class="hangman-button" onclick="guessLetter (this)">B</button>
+		<button class="hangman-button" onclick="guessLetter (this)">C</button>
+		<button class="hangman-button" onclick="guessLetter (this)">D</button>
+		<button class="hangman-button" onclick="guessLetter (this)">E</button>
+		<button class="hangman-button" onclick="guessLetter (this)">F</button>
+		<button class="hangman-button" onclick="guessLetter (this)">G</button>
+		<button class="hangman-button" onclick="guessLetter (this)">H</button>
+		<button class="hangman-button" onclick="guessLetter (this)">I</button>
+		<button class="hangman-button" onclick="guessLetter (this)">J</button>
+		<button class="hangman-button" onclick="guessLetter (this)">K</button>
+		<button class="hangman-button" onclick="guessLetter (this)">L</button>
+		<button class="hangman-button" onclick="guessLetter (this)">M</button>
+		<button class="hangman-button" onclick="guessLetter (this)">N</button>
+		<button class="hangman-button" onclick="guessLetter (this)">O</button>
+		<button class="hangman-button" onclick="guessLetter (this)">P</button>
+		<button class="hangman-button" onclick="guessLetter (this)">Q</button>
+		<button class="hangman-button" onclick="guessLetter (this)">R</button>
+		<button class="hangman-button" onclick="guessLetter (this)">S</button>
+		<button class="hangman-button" onclick="guessLetter (this)">T</button>
+		<button class="hangman-button" onclick="guessLetter (this)">U</button>
+		<button class="hangman-button" onclick="guessLetter (this)">V</button>
+		<button class="hangman-button" onclick="guessLetter (this)">W</button>
+		<button class="hangman-button" onclick="guessLetter (this)">X</button>
+		<button class="hangman-button" onclick="guessLetter (this)">Y</button>
+		<button class="hangman-button" onclick="guessLetter (this)">Z</button>
+	</div>
+	
+	<script type="text/javascript" src="../JS/events.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chris Butrick - FizzBuzz</title>
+	<link rel="icon" href="../Resources/pokeball2.ico">
+    <link rel="stylesheet" href="../CSS/style.css">
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+      <ul class="nav-bar">
+        <li> <img src="../Resources/Banner.png" alt="Banner with Chris Butick on it" class="banner"></li>
+        <li> <a href="PokemonBattle.html" class="nav-link">Pokemon Battle</a> </li>
+        <li> <a href="Hangman.html" class="nav-link">Hangman</a> </li>
+        <li> <a href="Calculator.html" class="nav-link">Calculator</a> </li>
+        <li> <a href="#" class="nav-link">FizzBuzz</a> </li>
+        <li> <a href="index.html" class="nav-link">Home</a> </li>
+      </ul>
+    </nav>
+
+	<!-- FizzBuzz Button -->
+	<form onSubmit="fizzbuzz ();return false;" class="fizzbuzz-grid">
+		<div class="fizzbuzz-input">
+			<input id="fizzbuzz-input" type="number" min="0" max="100" placeholder="Enter a positive number!">
+		</div>
+		
+		<div class="fizzbuzz-button">
+			<button type="submit">FizzBuzz!</button>
+		</div>
+	</form>
+	
+	<!--  Output Table -->
+	<table id="output">
+		<!-- FizzBuzz Output will go here-->
+	</table>
+	
+	<script type="text/javascript" src="../JS/events.js"></script>
+</body>
+
+</html>

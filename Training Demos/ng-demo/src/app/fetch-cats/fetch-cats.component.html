@@ -1,0 +1,11 @@
+<input type="number" [(ngModel)]="numCats">
+<button (click)="getCats ()">Get Cats</button>
+
+<!-- Examples of pipes being used with string interpolation, used to formay how you display your data -->
+<!--{{catPics | json}}
+{{now | date: 'long'}}-->
+
+<div *ngFor="let pic of catPics">
+    <!-- [src] is an example of property binding -->
+    <img [src]="pic.url" width="200" alt="">
+</div>
